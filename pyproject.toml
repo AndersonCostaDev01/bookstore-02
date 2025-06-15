@@ -3,13 +3,16 @@ name = "bookstore-02"
 version = "0.1.0"
 description = ""
 authors = ["Anderson Costa <costaandersom23@gmail.com>"]
-package-mode = false
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.13"
 django = ">=5.2.1,<6.0.0"
 djangorestframework = ">=3.16.0,<4.0.0"
+django-extensions = "^4.1"
+requests = "^2.32.4"
+python-slugify = "^8.0.4"
+django-debug-toolbar = "^5.2.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.0"
