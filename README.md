@@ -49,6 +49,7 @@ Aplicação de uma loja fictícia desenvolvida com o objetivo de aprendizagem do
 
 ## 🔁 Rotas da API
 
+
 | Rota                           | Método     | Descrição                                                                                                              |
 | ------------------------------ | ---------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `/bookstore/product/product/`  | GET / POST | Lista e cria produtos. Filtros disponíveis via query params:<br> - `active=true/false`<br> - `category=<id_categoria>` |
@@ -56,6 +57,8 @@ Aplicação de uma loja fictícia desenvolvida com o objetivo de aprendizagem do
 | `/bookstore/product/category/` | GET / POST | Lista e cria categorias. Filtro disponivel via query params:<br> - `active=true/false`                                 |
 | `/bookstore/order/order/`      | GET / POST | Lista e cria ordens de compra                                                                                          |
                                                                                      |
+
+
 
 
 > ❗ As rotas aceitam os métodos `GET` e `POST` usando Django Rest Framework.
