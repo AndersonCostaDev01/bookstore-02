@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-token-auth/', obtain_auth_token, name='api-token-auth'),
     # Rotas da API
+    path('', include('home.urls')),
     re_path('bookstore/(?P<version>(v1|v2)/product/)', include('product.urls')),
     re_path('bookstore/(?P<version>(v1|v2)/order/)', include('order.urls')),
 ]

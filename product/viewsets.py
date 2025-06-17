@@ -13,6 +13,8 @@ class ProductViewSet(ModelViewSet):
     serializer_class = ProductSerializer
 
     # autenticação
+
+    # Removiso a necessidade de autenticação no Produtos
     # authentication_classes = [
     #     SessionAuthentication, 
     #     BasicAuthentication, 
@@ -52,6 +54,7 @@ class CategoryViewSet(ModelViewSet):
     # serializers
     serializer_class = CategorySerializer
 
+    # removendo a necessidade de autenticação no Categorias
     # authentication_classes = [
     #     SessionAuthentication, 
     #     BasicAuthentication, 

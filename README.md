@@ -139,3 +139,17 @@ bookstore-02/
 ## ✍️ Autor
 
 Anderson Costa – [GitHub](https://github.com/AndersonCostaDev01)
+
+## 🚛 Projeto "Docker"
+
+para criar a `Imagem` do docker rode
+
+```bash
+docker build bookstore:latest .
+```
+
+agora para rodar 
+
+```bash
+docker run --name bookstore --rm -d -p 8000:8000 bookstore:latest
+``` 
