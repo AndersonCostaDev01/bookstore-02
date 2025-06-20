@@ -12,3 +12,4 @@ urlpatterns = [
     re_path('bookstore/(?P<version>(v1|v2)/product/)', include('product.urls')),
     re_path('bookstore/(?P<version>(v1|v2)/order/)', include('order.urls')),
 ]
+# e70bd1dfc2063dbbfb12cff4e8eac46a2862f2d1

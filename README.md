@@ -145,11 +145,23 @@ Anderson Costa – [GitHub](https://github.com/AndersonCostaDev01)
 para criar a `Imagem` do docker rode
 
 ```bash
-docker build bookstore:latest .
+docker build -t <nome-do-docker> .
 ```
 
 agora para rodar 
 
 ```bash
-docker run --name bookstore --rm -d -p 8000:8000 bookstore:latest
+docker run --name <nome-da-aplicação> --rm -d -p 8000:8000 <nome-do-docker>:<tag>
 ``` 
+
+link para ver esta imagem docker
+
+DockerHub - [Imagens](https://hub.docker.com/r/costaandersom/bookstore/tags)
+
+Para executar lembre de ter o Docker em sua maquina [Docker - Dowload](https://www.docker.com/) 
+
+rode no terminal 
+```bash
+docker run --name bookstore --rm -d -p 8000:8000 costaandersom/bookstore:0.0.1
+``` 
+ele vai rodar internamente em sua maquina na porta `localhost:8000`
