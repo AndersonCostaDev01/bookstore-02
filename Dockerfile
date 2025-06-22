@@ -10,6 +10,11 @@ ENV PYSETUP_PATH="/opt/pysetup" \
 # Define diretório de trabalho para instalar dependências
 WORKDIR $PYSETUP_PATH
 
+# Atualiza e instala o psycopg2
+RUN apt-get update && \
+    apt-get install -y libpq-dev gcc && \
+    pip install psycopg2
+
 # Copia os arquivos de dependência para dentro do container
 COPY poetry.lock pyproject.toml ./
 
