@@ -5,9 +5,9 @@ from rest_framework.routers import DefaultRouter
 from product.viewsets import ProductViewSet, CategoryViewSet
 
 router = DefaultRouter()
-router.register(r'products', ProductViewSet, basename='product')
-router.register(r'category', CategoryViewSet, basename='category')
+router.register(r"products", ProductViewSet, basename="product")
+router.register(r"category", CategoryViewSet, basename="category")
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]
