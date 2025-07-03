@@ -32,7 +32,7 @@ jobs:
       SQL_DATABASE: bookstore_db
       SQL_USER: dev
       SQL_PASSWORD: dev
-      SQL_HOST: localhost
+      SQL_HOST: db
       SQL_PORT: 5432
       DEBUG: 0
       SECRET_KEY: github-ci-key
