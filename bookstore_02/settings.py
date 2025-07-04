@@ -66,14 +66,22 @@ WSGI_APPLICATION = "bookstore_02.wsgi.application"
 
 # Database
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": os.getenv("SQL_ENGINE", "django.db.backends.postgresql"),
+#         "NAME": os.getenv("SQL_DATABASE", "bookstore_db"),
+#         "USER": os.getenv("SQL_USER", "dev"),
+#         "PASSWORD": os.getenv("SQL_PASSWORD", "dev"),
+#         "HOST": os.getenv("SQL_HOST", "localhost"),
+#         "PORT": os.getenv("SQL_PORT", "5432"),
+#     }
+# }
+# retornando para o sqlite pois o pythonAnyere não tem suporte ao postgresql atual 
+
 DATABASES = {
     "default": {
-        "ENGINE": os.getenv("SQL_ENGINE", "django.db.backends.postgresql"),
-        "NAME": os.getenv("SQL_DATABASE", "bookstore_db"),
-        "USER": os.getenv("SQL_USER", "dev"),
-        "PASSWORD": os.getenv("SQL_PASSWORD", "dev"),
-        "HOST": os.getenv("SQL_HOST", "localhost"),
-        "PORT": os.getenv("SQL_PORT", "5432"),
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
