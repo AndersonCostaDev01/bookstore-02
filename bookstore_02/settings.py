@@ -150,3 +150,6 @@ DEBUG = os.getenv("DEBUG", "0") == "1"
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
 ]
+
+STATIC_URL = "static/"
+STATTIC_ROOT = BASE_DIR / "staticfiles"
