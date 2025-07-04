@@ -138,7 +138,8 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(" ")
+ALLOWED_HOSTS = ['CostaAnderson.pythonanywhere.com']
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
@@ -148,7 +149,7 @@ DEBUG = os.getenv("DEBUG", "0") == "1"
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
+    "CostaAnderson.pythonanywhere.com",
 ]
 
 STATIC_URL = "static/"
