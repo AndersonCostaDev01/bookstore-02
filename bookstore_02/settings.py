@@ -138,7 +138,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-ALLOWED_HOSTS = ['CostaAnderson.pythonanywhere.com']
+ALLOWED_HOSTS = ['costaanderson.pythonanywhere.com']
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "0") == "1"
