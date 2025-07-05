@@ -9,7 +9,7 @@ load_dotenv(dotenv_path=ENV_FILE)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "foo"
+SECRET_KEY = "e*1ralz5kdam3)_3w6o#*cse9bv9(i&-*)^py&9v(^!46w1c5&"
 
 # Application definition
 
@@ -137,7 +137,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-ALLOWED_HOSTS = ['costaanderson.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["*"]
 
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
